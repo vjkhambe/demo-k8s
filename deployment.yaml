@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: demo-k8s
+  name: demo-k8s
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-k8s
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: demo-k8s
+    spec:
+      containers:
+      - image: vjkhambe/demo-k8s:1.0.0
+        name: demo-k8s
+        imagePullPolicy: "Always" 	
+        resources: {}
+        env:
+        - name: demo-k8s
+          valueFrom:
+            fieldRef:
+              fieldPath: spec.nodeName
+        - name: http_proxy
+          value: $(demo-k8s):4140           	  
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: demo-k8s
+  name: demo-k8s
+spec:
+  ports:
+  - name: 8080-8080
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: demo-k8s
+  type: LoadBalancer
+status:
+  loadBalancer: {}

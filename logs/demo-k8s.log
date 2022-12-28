@@ -1,0 +1,9 @@
+2021-04-05 00:25:31,639 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoApplication using Java 11.0.10 on vijay-Latitude-3540 with PID 3306843 (/home/vj/01_vijay/01_workspace/demo-k8s/target/classes started by vj in /home/vj/01_vijay/01_workspace/demo-k8s)
+2021-04-05 00:25:31,646 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-05 00:25:35,307 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-04-05 00:25:36,057 INFO org.springframework.boot.web.embedded.netty.NettyWebServer [main] Netty started on port 8080
+2021-04-05 00:25:36,091 INFO org.springframework.boot.StartupInfoLogger [main] Started DemoApplication in 6.354 seconds (JVM running for 7.748)
+2021-04-05 00:26:25,182 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoApplicationTests using Java 11.0.10 on vijay-Latitude-3540 with PID 3306966 (started by vj in /home/vj/01_vijay/01_workspace/demo-k8s)
+2021-04-05 00:26:25,190 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-05 00:26:27,649 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-04-05 00:26:28,234 INFO org.springframework.boot.StartupInfoLogger [main] Started DemoApplicationTests in 3.817 seconds (JVM running for 5.845)
