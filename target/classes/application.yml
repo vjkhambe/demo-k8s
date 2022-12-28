@@ -1,6 +1,0 @@
-spring:
-  application:
-    name: SpringBoot Docker and Kubernetes Demo App
-logging:
-  level:
-    root: info
